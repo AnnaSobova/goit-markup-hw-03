@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header"> 
-        <div class=".container"> </div>
+        <div class="container header-container"> 
         <nav class="navigation">
         <a class="logo link logo_head" href="#"> <span class="web-word-color">Web</span>Studio</a>
         <ul class="nav-list list">
@@ -28,17 +28,21 @@
             </li>
         </ul>
         </nav>
-        <ul class="list">
+         <ul class="list contact-info-head">
         <li><a class="contact-mail link" href="mail:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="contact-number link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </ul>  
+    </div>
         </header>
         <main>
-            <section class="hero">
-            <h1 class="tagline dark-thema">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="modal-btn" type="button">Заказать услугу</button>
-            </section>
             <section>
+                <div class="container ">
+                <h1 class="tagline dark-thema">Эффективные решения <br> для вашего бизнеса</h1>
+            <button class="modal-btn" type="button">Заказать услугу</button>
+             </div >
+            </section>
+            <section>     
+                <div class="container">
                 <h2 hidden>Преимущества</h2>
                 <ul>
                     <li class="list">
@@ -64,16 +68,20 @@
                         <p class="benefits_name_description">Значимость этих проблем настолько  очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
+                </div>
             </section>
             <section>
+                <div class="container"> 
                     <h2 class="block_name">Чем мы занимаемся</h2>
                     <ul>
                         <li class="list" ><img src="./img/pict_1.jpg" alt="человек печатает на клавиатуре" width="370" height="294"></li>
                         <li class="list" ><img src="./img/pict_2.jpg" alt="подключение через телефон к компьютеру" width="370" height="294"></li>
                         <li class="list" ><img src="./img/pict_3.jpg" alt="цветовая схема на планшете" width="370" height="294"></li>
                     </ul>
+                </div>
             </section>
             <section class="team">
+                <div class="container">
                 <h2 class="block_name">Наша команда</h2>
                 <ul>
                     <li class="list"><img src="./img/employee_1.jpg" alt="игорь демьяненко" width="270" height="260">
@@ -93,9 +101,11 @@
                     <p class="employee_name_work" lang="en">UI Designer</p>
                     </li> 
                 </ul>
+             </div>
             </section>
         </main>
-        <footer class="dark-thema">
+        <footer class="dark-thema ">
+            <div class="container">
         <a class="link logo_foot" href=""> <span class="web-word-color">Web</span>Studio</a>
         <address>
         <ul class="list">
@@ -104,6 +114,7 @@
             <li><a class="contact-number-foot  link list" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
         </address>
+        </div>
         </footer>
 </body>
 </html>
