@@ -14,11 +14,11 @@
   text-decoration: none;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -50,6 +50,7 @@ img {
 .dark-thema {
   background-color: #2f303a;
 }
+
 .logo_head {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -115,6 +116,12 @@ img {
 .contact-mail {
   margin-right: 50px;
 }
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+}
 
 .modal-btn {
   min-width: 200px;
@@ -140,6 +147,10 @@ img {
 /* hero start*/
 
 .tagline {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   font-family: var(--primary-font-family);
   font-weight: 900;
   font-size: 44px;
