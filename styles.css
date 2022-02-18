@@ -44,10 +44,6 @@ img {
 }
 /* components start */
 
-.dark-thema {
-  background-color: #2f303a;
-}
-
 .logo_head {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -162,6 +158,9 @@ img {
 }
 /* hero end */
 /* main container */
+
+/* benefits section*/
+
 .benefits {
   display: flex;
   flex-wrap: wrap;
@@ -172,9 +171,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.benefits-section:not(:last-child) {
-  margin-right: 30px;
+.benefits-section:nth-child(4n) {
+  margin-right: 0;
 }
+
 .benefits_name {
   font-weight: 700;
   font-size: 14px;
@@ -190,6 +190,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--light-dark-text-color);
 }
+/* benefits section*/
+
 .process-work {
   display: flex;
   flex-wrap: wrap;
@@ -217,7 +219,14 @@ img {
   margin-right: 30px;
   text-align: center;
 }
-
+.team-members-pict {
+  box-sizing: border-box;
+  border-width: 270px;
+  border: 1px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-members-pict:nth-child(4n) {
   margin-right: 0;
 }
@@ -283,14 +292,35 @@ img {
 /* portfolio end */
 
 /* footer start */
+
+.dark-thema {
+  background-color: #2f303a;
+  padding-top: 60px;
+}
 .logo_foot {
+  padding-top: 60px;
+  padding-left: 215px;
+
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-light-text-color);
+  cursor: pointer;
 }
+.foot-space {
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+.foot-space-item {
+  padding-left: 215px;
+  margin-bottom: 9px;
+}
+.foot-space-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .web-word-color {
   color: var(--accent-color);
 }
@@ -302,6 +332,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-light-text-color);
+  cursor: pointer;
 }
 
 .contact-mail-foot,
@@ -311,7 +342,8 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--main-light-text-color);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 /* footer end */
