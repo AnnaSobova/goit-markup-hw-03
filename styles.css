@@ -20,8 +20,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-
-body {
+. body {
   font-family: var(--primary-font-family);
 }
 h1,
@@ -44,6 +43,10 @@ img {
 }
 /* components start */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .logo_head {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -59,14 +62,13 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
   align-items: center;
 }
 .nav-list {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   align-items: center;
 }
@@ -82,15 +84,22 @@ img {
 .nav-list-link:focus {
   color: var(--accent-color);
 }
+.nav-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
 .contact-info-head {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   align-items: center;
   margin-left: auto;
+}
+.contact-info-head-size {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contact-number,
@@ -260,7 +269,16 @@ img {
 /* main container end */
 /* portfolio start */
 
-.portfolio_projects {
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio_projects_btn {
+  padding: 6px 22px;
+  border: 1px;
+  border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -269,11 +287,24 @@ img {
   background-color: #f5f4fa;
   cursor: pointer;
 }
-.portfolio_projects:hover,
-.portfolio_projects:focus {
+.portfolio-btn {
+  margin-right: 8px;
+  padding-bottom: 34px;
+}
+.portfolio-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio_projects_btn:hover,
+.portfolio_projects_btn:focus {
   color: var(--main-light-text-color);
   background-color: var(--accent-color);
 }
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .projects_name {
   font-weight: 700;
   font-size: 18px;
@@ -288,6 +319,22 @@ img {
   letter-spacing: 0.03em;
   color: var(--light-dark-text-color);
   cursor: pointer;
+}
+.projects-size {
+  box-sizing: border-box;
+  border-width: 370px;
+  border: 1px;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.projects-size:nth-child(3n) {
+  margin-right: 0;
+}
+.project-space-text {
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 /* portfolio end */
 
