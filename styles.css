@@ -47,6 +47,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.header-style {
+  border-bottom: 1px solid #ececec;
+}
+
 .logo_head {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -62,7 +66,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .navigation {
   display: flex;
@@ -73,6 +76,10 @@ img {
   align-items: center;
 }
 .nav-list-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 14px;
@@ -85,25 +92,29 @@ img {
   color: var(--accent-color);
 }
 .nav-list-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-right: 50px;
 }
-
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .contact-info-head {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 .contact-info-head-size {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin-right: 50px;
+}
+.contact-info-head-size:nth-child(2n) {
+  margin-right: 0;
 }
 
 .contact-number,
 .contact-mail {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 14px;
@@ -119,14 +130,12 @@ img {
 .contact-number:focus {
   color: var(--accent-color);
 }
-.contact-mail {
-  margin-right: 50px;
-}
+
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
 }
 
 .modal-btn {
@@ -154,8 +163,7 @@ img {
 
 .tagline {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   font-family: var(--primary-font-family);
   font-weight: 900;
@@ -177,8 +185,6 @@ img {
 .benefits-section {
   width: 270px;
   margin-right: 30px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   font-family: var(--primary-font-family);
 }
 .benefits-section:nth-child(4n) {
@@ -186,6 +192,7 @@ img {
 }
 
 .benefits_name {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -193,6 +200,10 @@ img {
   text-transform: uppercase;
   color: var(--dark-text-color);
 }
+.benefits_name:nth-last-child(4n) {
+  margin: 0;
+}
+
 .benefits_name_description {
   font-weight: 400;
   font-size: 14px;
@@ -206,7 +217,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 94px;
 }
 .process-work-pict {
   margin-right: 30px;
@@ -217,9 +227,6 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  font-family: var(--primary-font-family);
 }
 .team-members {
   display: flex;
@@ -241,20 +248,25 @@ img {
 .team-members-pict:nth-child(4n) {
   margin-right: 0;
 }
+.team-members-space {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .block_name {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--dark-text-color);
-  font-family: var(--primary-font-family);
+}
+.space-non {
+  padding-top: 0;
 }
 
 .employee_name {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -345,11 +357,9 @@ img {
 .dark-thema {
   background-color: #2f303a;
   padding-top: 60px;
-  min-width: 1600px;
+  padding-bottom: 60px;
 }
 .logo_foot {
-  padding-top: 60px;
-
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -360,12 +370,9 @@ img {
 }
 .foot-space {
   margin-top: 20px;
-  padding-bottom: 60px;
 }
 .foot-space-item {
   font-family: var(--primary-font-family);
-
-  margin-bottom: 9px;
 }
 .foot-space-item:not(:last-child) {
   margin-bottom: 9px;
