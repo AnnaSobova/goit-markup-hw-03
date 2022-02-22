@@ -288,6 +288,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 34px;
 }
 .portfolio_projects_btn {
   padding: 6px 22px;
@@ -302,10 +303,7 @@ img {
   background-color: #f5f4fa;
   cursor: pointer;
 }
-.portfolio-btn {
-  margin-right: 8px;
-  padding-bottom: 34px;
-}
+
 .portfolio-btn:not(:last-child) {
   margin-right: 8px;
 }
@@ -330,9 +328,12 @@ img {
 .project-card-wrapper {
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+
   border: 1px solid #eeeeee;
   border-top: none;
 }
+
 .projects_name {
   font-weight: 700;
   font-size: 18px;
