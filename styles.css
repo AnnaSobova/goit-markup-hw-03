@@ -176,7 +176,6 @@ img {
   text-align: center;
   margin-bottom: 30px;
 
-  font-family: var(--primary-font-family);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -196,7 +195,6 @@ img {
 .benefits-section {
   width: 270px;
   margin-right: 30px;
-  font-family: var(--primary-font-family);
 }
 .benefits-section:nth-child(4n) {
   margin-right: 0;
